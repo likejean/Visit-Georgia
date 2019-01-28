@@ -42,15 +42,15 @@ class Header extends Component {
                     <NavbarBrand href="/">
                         <img style={this.state.windowSize > 250 ? {display: 'block'} : {display: 'none'}} src={image} height="95" width="120" alt='Visit Georgia' />
                     </NavbarBrand>
-                    <Collapse isOpen={this.state.isNavOpen} navbar>
+                    <Collapse isOpen={this.state.isNavOpen && this.state.windowSize <= 768} navbar>
                         <Nav navbar>
-                            <NavItem>
+                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/5} : {width: 200}}>
                                 <NavLink className="nav-link" to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/5} : {width: 200}}>
                                 <NavLink className="nav-link" to='/activities'><span className="fa fa-info fa-lg"></span> Activities</NavLink>
-                            </NavItem>
-                            <NavItem>
+                            </NavItem >
+                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/5} : {width: 200}}>
                                 <NavLink className="nav-link" to='/tours'><span className="fa fa-list fa-lg"></span> Tours</NavLink>
                             </NavItem>                                
                         </Nav>
