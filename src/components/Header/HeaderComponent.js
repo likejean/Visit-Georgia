@@ -1,30 +1,47 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import withResizeDetector from '../../helpers/WindowResizeDetector';
 import image from '../../logo.png';
+import './Header.scss';
 import { NavLink } from 'react-router-dom';
-
+console.log(withResizeDetector);
 class Header extends Component {
 
     constructor(props){
-        super(props);
+        super(props);        
         this.state = {
-            isNavOpen: false
+            isNavOpen: false,
+            windowSize: window.innerWidth         
         };
         this.toggleNav = this.toggleNav.bind(this);
+        this.handleResize = this.handleResize.bind(this);
     }
     toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen
         });
+    }  
+
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResize);
+    }
+    componentWillUnmount() {
+        window.addEventListener("resize", null);
+    }
+    
+    handleResize() {
+        this.setState({windowSize: window.innerWidth})
     }
 
-    render(){
+    render(){ 
+        
         return (            
             <Navbar dark expand="md">
                 <div className="container">
                     <NavbarToggler onClick={this.toggleNav} />
                     <NavbarBrand href="/">
-                        <img src={image} height="75" width="100" alt='Visit Georgia' /></NavbarBrand>
+                        <img style={this.state.windowSize > 250 ? {display: 'block'} : {display: 'none'}} src={image} height="95" width="120" alt='Visit Georgia' />
+                    </NavbarBrand>
                     <Collapse isOpen={this.state.isNavOpen} navbar>
                         <Nav navbar>
                             <NavItem>

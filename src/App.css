@@ -1,15 +1,13 @@
-.navbar {
-    background: rgb(65, 70, 139);
-}
-a.nav-link{
+
+/* a.nav-link{
     align-self: center;
     list-style-type: none; 
     font-size: 25px; 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
-}
-li.nav-item{
+} */
+/* li.nav-item{
     width: 200px;
     text-align: center;   
-}
+} */

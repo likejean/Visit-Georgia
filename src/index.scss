@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; //this will prevent the elements to grow margins
+}
+
+$mainBlack: #222;
+$mainPurple: #5b37c0;
+$mainWhite: #fff;
+
+
+body{
+    background: $mainWhite;
+    color: $mainPurple;
+    font-family: 'Open Sans', sans-serif;
+}

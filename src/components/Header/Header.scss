@@ -1,0 +1,17 @@
+@import '../../index.scss';
+.navbar {
+    background: $mainPurple;
+    padding: 1.5rem 0.5rem;
+}
+
+a.nav-link{
+    align-self: center;
+    list-style-type: none; 
+    font-size: 25px; 
+    color: $mainWhite !important;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+
