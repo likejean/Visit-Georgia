@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import Home from '../Home/HomeComponent';
 import Header from '../Header/HeaderComponent';
-import { Switch } from 'react-router-dom';
-console.log(Header)
+import Footer from '../Footer/FooterComponent';
+import Activities from '../Activities/ActivitiesComponent';
+import Tours from '../Tours/ToursComponent';
+import James from '../James/JamesComponent';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
 
 class Main extends Component {
     
@@ -11,8 +16,13 @@ class Main extends Component {
             <div>
                 <Header />
                 <Switch>
-
-                </Switch>           
+                    <Route path='/home' component={() => <Home />} />
+                    <Route exact path='/activities' component={() => <Activities />} />                    
+                    <Route exact path='/tours' component={() => <Tours />} />
+                    <Route exact path='/james' component={() => <James />} /> 
+                    <Redirect to='/home' />
+                </Switch> 
+                <Footer />          
             </div>
         );
     }

@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
-import withResizeDetector from '../../helpers/WindowResizeDetector';
 import image from '../../logo.png';
 import './Header.scss';
 import { NavLink } from 'react-router-dom';
-console.log(withResizeDetector);
+
 class Header extends Component {
 
     constructor(props){
@@ -44,15 +43,18 @@ class Header extends Component {
                     </NavbarBrand>
                     <Collapse isOpen={this.state.isNavOpen && this.state.windowSize <= 768} navbar>
                         <Nav navbar>
-                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/5} : {width: 200}}>
+                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/6} : {width: 200}}>
                                 <NavLink className="nav-link" to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
                             </NavItem>
-                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/5} : {width: 200}}>
+                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/6} : {width: 200}}>
                                 <NavLink className="nav-link" to='/activities'><span className="fa fa-info fa-lg"></span> Activities</NavLink>
                             </NavItem >
-                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/5} : {width: 200}}>
-                                <NavLink className="nav-link" to='/tours'><span className="fa fa-list fa-lg"></span> Tours</NavLink>
-                            </NavItem>                                
+                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/6} : {width: 200}}>
+                                <NavLink className="nav-link" to='/tours'><span className="fa fa-car fa-lg"></span> Tours</NavLink>
+                            </NavItem> 
+                            <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/6} : {width: 200}}>
+                                <NavLink className="nav-link" to='/james'><span className="fa fa-question-circle fa-lg"></span> Placeholder</NavLink>
+                            </NavItem>                               
                         </Nav>
                     </Collapse>
                 </div>

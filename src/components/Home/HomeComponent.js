@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Tours(props) {
+function Home(props) {
     return(
         <div>
-            <h1>SERGEY PAGE</h1>
+            <h1>HOME PAGE</h1>
         </div>
     );
 }
 
-export default Tours;
+export default Home;

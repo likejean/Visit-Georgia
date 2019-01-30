@@ -7,13 +7,17 @@
 .navbar {
     background: $mainPurple;
     padding: 1.5rem 0.5rem;
+    a.navbar-brand {
+        width: 100px;
+    }
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 }
 
-// .navbar-nav{
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     text-align: center;
-// }
+
 li.nav-item {
     width: 200px;
 }
@@ -22,7 +26,7 @@ li.nav-item {
 a.nav-link{
     align-self: center;
     list-style-type: none; 
-    font-size: 25px; 
+    font-size: 16px; 
     color: $mainWhite !important;
     
 }
