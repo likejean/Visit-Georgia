@@ -16,8 +16,7 @@ export default class Tour extends Component {
         
     const { id, city, img, name, info } = this.props.tour;    
     const { removeTours } = this.props;
-    //console.log(tourData)
-    console.log(img)
+
     return (
         
         <article className='tour'>
