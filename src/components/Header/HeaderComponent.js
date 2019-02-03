@@ -53,7 +53,7 @@ class Header extends Component {
                                 <NavLink className="nav-link" to='/tours'><span className="fa fa-car fa-lg"></span> Tours</NavLink>
                             </NavItem> 
                             <NavItem style={this.state.windowSize > 768 ? {width: this.state.windowSize/6} : {width: 200}}>
-                                <NavLink className="nav-link" to='/james'><span className="fa fa-question-circle fa-lg"></span> Placeholder</NavLink>
+                                <NavLink className="nav-link" to='/lodging'><span className="fa fa-bed fa-lg"></span> Lodging</NavLink>
                             </NavItem>                               
                         </Nav>
                     </Collapse>
