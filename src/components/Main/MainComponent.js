@@ -20,7 +20,7 @@ class Main extends Component {
                     <Route exact path='/activities' component={() => <Activities />} />                    
                     <Route exact path='/tours' component={() => <Tours />} />
                     <Route exact path='/james' component={() => <James />} /> 
-                    {/* <Redirect to='/home' /> */}
+                    <Redirect to='/home' />
                 </Switch> 
                 <Footer />          
             </div>

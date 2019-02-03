@@ -33,6 +33,9 @@
 
 .tour-info {
     padding: 1rem 0.5rem;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
     h3 {
         text-transform: uppercase;        
     }
@@ -43,6 +46,9 @@
     }
     h5 {
         text-transform: capitalize;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        
         span {
             color: $mainPurple;
             margin: 0.5rem;
@@ -50,4 +56,8 @@
             cursor: pointer;
         }
     }
+    .Ripple-parent{
+        padding: 10px;
+        margin: 0;
+    } 
 }

@@ -1,0 +1,16 @@
+@import '../../index.scss';
+div.modal-content{
+    background-color: $mainWhite;
+    h4.modal-title {
+        width: 100%;
+        text-align: center;
+    }
+    div.modal-footer {
+        display: flex;
+        justify-content: center;
+        .Ripple-parent{
+            width: 10rem;
+        }
+    }
+}
+    
