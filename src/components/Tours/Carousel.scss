@@ -1,0 +1,12 @@
+@import '../../index.scss';
+
+span.carousel-control-prev-icon, span.carousel-control-next-icon {
+    width: 44px !important;
+    height: 44px !important;
+    
+}
+
+ol.carousel-indicators li {
+    width: 12px !important;
+    height: 12px !important;
+}
