@@ -4,7 +4,7 @@ import Header from '../Header/HeaderComponent';
 import Footer from '../Footer/FooterComponent';
 import Activities from '../Activities/ActivitiesComponent';
 import Tours from '../Tours/ToursListComponent';
-import James from '../James/JamesComponent';
+import Lodging from '../Lodging/LodgingComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 
@@ -19,7 +19,7 @@ class Main extends Component {
                     <Route path='/home' component={() => <Home />} />
                     <Route exact path='/activities' component={() => <Activities />} />                    
                     <Route exact path='/tours' component={() => <Tours />} />
-                    <Route exact path='/james' component={() => <James />} /> 
+                    <Route exact path='/lodging' component={() => <Lodging />} /> 
                     <Redirect to='/home' />
                 </Switch> 
                 <Footer />          
