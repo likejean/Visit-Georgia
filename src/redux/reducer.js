@@ -1,13 +1,13 @@
 import { tourData } from '../database/toursData';
 import { lodgingData } from '../database/lodgingData';
 import { homeData } from '../database/homeData';
-import { activities_array } from '../database/activities_array';
+import { activitiesData } from '../database/activitiesData';
 
 export const initialState = {
     tours: tourData,
-    lodges: lodgingData,
+    lodging: lodgingData,
     features: homeData,
-    activities: activities_array
+    activities: activitiesData
 };
 
 export const Reducer = (state = initialState, action) => {

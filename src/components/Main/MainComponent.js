@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 const mapStateToProps = state => {
     return {
         tours: state.tours,
-        lodges: state.lodges,
+        lodging: state.lodging,
         features: state.features,
         activities: state.activities
     }
@@ -37,7 +37,7 @@ class Main extends Component {
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/activities' component={() => <Activities activities={this.props.activities}/>} />                    
                     <Route exact path='/tours' component={() => <Tours tours={this.props.tours} />} />
-                    <Route exact path='/lodging' component={() => <Lodging lodges={this.props.lodges}/>} /> 
+                    <Route exact path='/lodging' component={() => <Lodging lodging={this.props.lodging}/>} /> 
                     <Redirect to='/home' />
                 </Switch> 
                 <Footer />          
