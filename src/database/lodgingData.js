@@ -2,7 +2,7 @@ export const lodgingData = [
     {
         id: 1,
         name: "Old Tbilisi B&B",
-        img: ['/assets/images/lodging/Old_Tbilisi_1.png', '/assets/images/lodging/Old_Tbilisi_2.png', '/assets/images/lodging/Old_Tbilisi_3.png']
+        img: ['/assets/images/lodging/Old_Tbilisi_1.png', '/assets/images/lodging/Old_Tbilisi_2.png', '/assets/images/lodging/Old_Tbilisi_3.png'],
         price: '$26',
         style: 'Budget',
         amenities: 'Free Wifi, Free Parking',
@@ -11,7 +11,7 @@ export const lodgingData = [
     {
         id: 2,
         name: "Envoy Hostel and Tours",
-        img: ['/assets/images/lodging/Envoy_1.png', '/assets/images/lodging/Envoy_2.png', '/assets/images/lodging/Envoy_3.png']
+        img: ['/assets/images/lodging/Envoy_1.png', '/assets/images/lodging/Envoy_2.png', '/assets/images/lodging/Envoy_3.png'],
         price: '$25',
         style: 'Hostel',
         amenities: 'Free Wifi, Breakfast Included',

@@ -3,8 +3,6 @@ import { MDBBtn, MDBIcon } from "mdbreact";
 import TourModal from './TourModalComponent';
 import './Tour.scss';
 
-
-
 export default class Tour extends Component {
     state = {
         showInfo: false,
@@ -25,7 +23,7 @@ export default class Tour extends Component {
     render() {
         
     const { id, city, img, name, info, details } = this.props.tour; 
-    // console.log(details)   
+    console.log(this.props.tour)  
     const { removeTours } = this.props;
     return (        
         <article className='tour'>
