@@ -1,4 +1,4 @@
-export const activities_array =
+export const activitiesData =
 [
     {
         id: 0,
@@ -8,77 +8,77 @@ export const activities_array =
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 1,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 2,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 3,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 4,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 5,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 6,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 7,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 8,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 9,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 10,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
         desciption: 'Tbilisi'
     },
     {
-        id: 0,
+        id: 11,
         name: 'Tbilisi', 
         image: 'Tbilisi',
         catagory: 'Tbilisi',
