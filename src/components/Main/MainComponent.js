@@ -54,8 +54,6 @@ class Main extends Component {
                             toggleModal={this.props.tours.toggleModal}
                         />} 
                     />
-                    <Route exact path='/lodging' component={() => <Lodging lodges={this.props.lodges}/>} /> 
-                    <Route exact path='/tours' component={() => <Tours tours={this.props.tours} />} />
                     <Route exact path='/lodging' component={() => <Lodging lodging={this.props.lodging}/>} /> 
                     <Redirect to='/home' />
                 </Switch> 

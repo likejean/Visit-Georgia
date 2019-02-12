@@ -1,6 +1,6 @@
-import { activities_array } from '../database/activities_array';
+import { activitiesData } from '../database/activitiesData';
 
-export const Activities = (state = activities_array, action) => {
+export const Activities = (state = activitiesData, action) => {
     switch(action.type) {
         default:
             return state;
