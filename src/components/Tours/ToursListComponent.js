@@ -2,24 +2,23 @@ import React, { Component } from 'react';
 import Tour from './TourComponent';
 import './ToursList.scss';
 
-
 export default class Tours extends Component  {
-	    
-    removeTour = id => {		
-		const {tours} = this.props;
-		const sortedTours = tours.filter(tour => tour.id !==id);
-		this.setState({
-			tours: sortedTours
-		});
-	}
-    render () {
-        
-        const {tours} = this.props;
+	
+    render () { 
+		
         return(
             <div className="tourlist">
-				{tours.map(tour => {
+				{this.props.tours.map(tour => {
 					return(
-						<Tour key={tour.id} tour={tour} removeTours={this.removeTour} />
+						<Tour 
+							key={tour.id} 
+							tour={tour} 
+							closeTour={this.props.closeTour}
+							showInfo={this.props.showInfo}
+							toggleInfo={this.props.toggleInfo}
+							showModal={this.props.showModal} 
+							toggleModal={this.props.toggleModal}
+						/>
 					)
 				})}
 			</div>
