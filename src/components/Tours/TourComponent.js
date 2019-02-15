@@ -4,25 +4,11 @@ import TourModal from './TourModalComponent';
 import './Tour.scss';
 
 export default class Tour extends Component {
-    state = {
-        showInfo: false,
-        showModal: false
-    }
-    handleInfo = () => {
-        this.setState({
-            showInfo: !this.state.showInfo            
-        });
-    }
-    handleModal = () => {
-        this.setState({
-            showModal: !this.state.showModal            
-        });
-    }
-
+   
     render() {
         const { id, city, img, name, info, details } = this.props.tour;
-        const { closeTour } = this.props;
-        
+        const { closeTour, showInfo, toggleInfo, showModal, toggleModal } = this.props;
+
         
         return (        
             <article className='tour'>
@@ -35,18 +21,18 @@ export default class Tour extends Component {
                     </span>
                 </div>
                 
-                <div style={!this.state.showInfo ? {height: 250} : null} className="col-12 tour-info">
+                <div style={!toggleInfo[id] ? {height: 250} : null} className="col-12 tour-info">
                     <h3>{city}</h3>
                     <h4>{name}</h4>                                
                     <h5>
                         info{" "}
-                        <span onClick={this.handleInfo}>
+                        <span onClick={()=>showInfo(id)}>
                             <i className='fas fa-caret-square-down' />
                         </span>                
                     </h5>
-                    {this.state.showInfo && <p>{info}</p>}             
-                    <ButtonPage handleModal={(this.handleModal)} />
-                    <TourModal key={id} city={city} details={details} showModal={this.state.showModal} handleModal={this.handleModal} />
+                    {toggleInfo[id] && <p>{info}</p>}             
+                    <ButtonPage handleModal={()=>showModal(id)} />
+                    <TourModal key={id} city={city} details={details} showModal={toggleModal[id]} handleModal={()=>showModal(id)} />
                 </div>
             </article>
         )
