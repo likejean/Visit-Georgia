@@ -15,14 +15,14 @@ export const closeTour = (tourId) => ({
     payload: tourId
 });
 
-export const showInfo = (tourId) => ({
+export const showInfo = (id) => ({
     type: ActionTypes.SHOW_INFO,
-    payload: tourId
+    payload: id
 });
 
-export const showModal = (tourId) => ({
+export const showModal = (id) => ({
     type: ActionTypes.SHOW_MODAL,
-    payload: tourId
+    payload: id
 });
 
 export const loadingTours = () => ({

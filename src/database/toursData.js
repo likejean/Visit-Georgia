@@ -83,7 +83,7 @@ export const tourData = [
             {
                 id: 4,
                 name: 'Monastery Of Shio-Mgvime',
-                img: '/assets/images/tours/Kutaisi/Monastery Of Shio-Mgvime.jpg'
+                img: '/assets/images/tours/Mtskheta/Monastery Of Shio-Mgvime.jpg'
             }
         ]
     },
