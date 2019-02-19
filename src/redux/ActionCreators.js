@@ -1,5 +1,6 @@
 import * as ActionTypes from './ActionTypes';
 import { tourData } from '../database/toursData';
+import { homeData } from '../database/homeData';
 
 export const fetchTours = () => (dispatch) => {
     
@@ -7,6 +8,15 @@ export const fetchTours = () => (dispatch) => {
 
     setTimeout(() => {
         dispatch(addTours(tourData));
+    }, 2000);
+}
+
+export const fetchFeatures = () => (dispatch) => {
+    
+    dispatch(loadingFeatures(true));
+
+    setTimeout(() => {
+        dispatch(addFeatures(homeData));
     }, 2000);
 }
 
@@ -32,4 +42,13 @@ export const loadingTours = () => ({
 export const addTours = (tours) => ({
     type: ActionTypes.ADD_TOURS,
     payload: tours
+})
+
+export const loadingFeatures = () => ({
+    type: ActionTypes.FEATURES_LOADING
+});
+
+export const addFeatures = (features) => ({
+    type: ActionTypes.ADD_FEATURES,
+    payload: features
 })

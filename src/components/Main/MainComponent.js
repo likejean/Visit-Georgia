@@ -7,9 +7,9 @@ import Tours from '../Tours/ToursListComponent';
 import Lodging from '../Lodging/LodgingComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { closeTour, fetchTours, showInfo, showModal } from '../../redux/ActionCreators';
+import { closeTour, fetchTours, fetchFeatures, showInfo, showModal } from '../../redux/ActionCreators';
 
-const mapStateToProps = state => {
+const mapStateToProps = state => {   
     return {
         tours: state.tours,
         lodging: state.lodging,
@@ -19,6 +19,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
+    fetchFeatures: () => dispatch(fetchFeatures()),
     fetchTours: () => dispatch(fetchTours()),
     closeTour: (id) => dispatch(closeTour(id)),
     showInfo: (id) => dispatch(showInfo(id)),
@@ -29,13 +30,13 @@ class Main extends Component {
     
     componentDidMount () {
         this.props.fetchTours();
+        this.props.fetchFeatures();
     }
     render() {
 
         const HomePage = () => {
-            
             return (
-                <Home data={this.props.features}/>
+                <Home features={this.props.features.features}/>
             )
         }
         return (
