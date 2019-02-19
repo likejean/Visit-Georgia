@@ -3,7 +3,8 @@ import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDB
 "mdbreact";
 import './Carousel.scss';
 
-const CarouselPage = (props) => { 
+const CarouselPage = (props) => {
+    console.log('TOURS',props) 
     return (
         <MDBContainer>        
             <MDBCarousel activeItem={1} length={props.images.length} showControls={true} showIndicators={true} className="z-depth-1">

@@ -8,7 +8,6 @@ export default class Tour extends Component {
     render() {
         const { id, city, img, name, info, details } = this.props.tour;
         const { closeTour, showInfo, toggleInfo, showModal, toggleModal } = this.props;
-
         
         return (        
             <article className='tour'>
