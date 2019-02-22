@@ -5,3 +5,4 @@ export const TOURS_LOADING = 'TOURS_LOADING';
 export const ADD_TOURS = 'ADD_TOURS';
 export const FEATURES_LOADING = 'FEATURES_LOADING';
 export const ADD_FEATURES = 'ADD_FEATURES';
+export const GET_TITLE = 'GET_TITLE';

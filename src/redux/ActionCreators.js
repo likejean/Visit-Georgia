@@ -52,3 +52,12 @@ export const addFeatures = (features) => ({
     type: ActionTypes.ADD_FEATURES,
     payload: features
 })
+
+export const getTitle = (title, id) => ({
+    type: ActionTypes.GET_TITLE,
+    payload: {
+        caption: title,
+        current: id
+    }
+})
+

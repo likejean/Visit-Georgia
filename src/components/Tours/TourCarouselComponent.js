@@ -4,12 +4,11 @@ import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDB
 import './Carousel.scss';
 
 const CarouselPage = (props) => {
-    console.log('TOURS',props) 
     return (
         <MDBContainer>        
             <MDBCarousel activeItem={1} length={props.images.length} showControls={true} showIndicators={true} className="z-depth-1">
                 <MDBCarouselInner>
-                    {props.images.map(item => {
+                    {props.images.map(item => {                        
                         return (
                             <MDBCarouselItem key={item.id} itemId={item.id}>
                                 <MDBView>

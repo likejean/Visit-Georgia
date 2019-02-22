@@ -1,30 +1,30 @@
 export const homeData = [
     {
-        id: 1,
+        key: 1,
         city: "StabbingDragon",
         img: '/assets/images/tours/stGeorgeStabbingDragon.jpg',
         name: 'St George Stabbing Dragon',
         info: 'This architectural complex from the XIV century is located in the village of Gergeti, 6 km from the town of Stepantsminda, at a height of 2200 m.'
     },
     {
-        id: 2,
+        key: 2,
         city: "StabbingDragon",
-        img: '/assets/images/tours/stGeorgeStabbingDragon.jpg',
-        name: 'St George Stabbing Dragon',
+        img: '/assets/images/tours/Svaneti_sunshine.jpg',
+        name: 'Svaneti',
         info: 'This architectural complex from the XIV century is located in the village of Gergeti, 6 km from the town of Stepantsminda, at a height of 2200 m.'
     },
     {
-        id: 3,
+        key: 3,
         city: "StabbingDragon",
         img: '/assets/images/tours/stGeorgeStabbingDragon.jpg',
-        name: 'St George Stabbing Dragon',
+        name: 'Free',
         info: 'This architectural complex from the XIV century is located in the village of Gergeti, 6 km from the town of Stepantsminda, at a height of 2200 m.'
     },
     {
-        id: 4,
+        key: 4,
         city: "StabbingDragon",
-        img: '/assets/images/tours/stGeorgeStabbingDragon.jpg',
-        name: 'St George Stabbing Dragon',
+        img: '/assets/images/tours/Tbilisi.jpg',
+        name: 'Tbilisi',
         info: 'This architectural complex from the XIV century is located in the village of Gergeti, 6 km from the town of Stepantsminda, at a height of 2200 m.'
     }
 ]
