@@ -17,7 +17,7 @@ export default class Tours extends Component  {
 							showInfo={this.props.showInfo}
 							toggleInfo={this.props.toggleInfo}
 							showModal={this.props.showModal} 
-							toggleModal={this.props.toggleModal}
+							toggleModal={this.props.toggleModal}													
 						/>
 					)
 				})}

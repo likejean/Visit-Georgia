@@ -7,7 +7,7 @@ import Tours from '../Tours/ToursListComponent';
 import Lodging from '../Lodging/LodgingComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { closeTour, fetchTours, fetchFeatures, showInfo, showModal } from '../../redux/ActionCreators';
+import { closeTour, fetchTours, fetchFeatures, showInfo, showModal, getTitle } from '../../redux/ActionCreators';
 
 const mapStateToProps = state => {   
     return {
@@ -23,20 +23,25 @@ const mapDispatchToProps = (dispatch) => ({
     fetchTours: () => dispatch(fetchTours()),
     closeTour: (id) => dispatch(closeTour(id)),
     showInfo: (id) => dispatch(showInfo(id)),
-    showModal: (id) => dispatch(showModal(id))
+    showModal: (id) => dispatch(showModal(id)),
+    getTitle: (title, id) => dispatch(getTitle(title, id))
 })
 
 class Main extends Component {   
     
     componentDidMount () {
         this.props.fetchTours();
-        this.props.fetchFeatures();
+        this.props.fetchFeatures();        
     }
     render() {
-
         const HomePage = () => {
             return (
-                <Home features={this.props.features.features}/>
+                <Home 
+                    features={this.props.features.features} 
+                    getTitle={this.props.getTitle}
+                    caption={this.props.features.caption} 
+                    current={this.props.features.current}                  
+                />
             )
         }
         return (
@@ -52,7 +57,7 @@ class Main extends Component {
                             showInfo={this.props.showInfo}
                             toggleInfo={this.props.tours.toggleInfo}
                             showModal={this.props.showModal}
-                            toggleModal={this.props.tours.toggleModal}
+                            toggleModal={this.props.tours.toggleModal}               
                         />} 
                     />
                     <Route exact path='/lodging' component={() => <Lodging lodging={this.props.lodging}/>} /> 
