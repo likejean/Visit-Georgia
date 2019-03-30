@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.18.3",
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
+    "express": "^4.16.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "mdbreact": "^4.9.0",
+    "morgan": "^1.9.0",
     "node-sass": "^4.11.0",
     "popper.js": "^1.12.9",
     "react": "^16.7.0",
@@ -16,7 +19,7 @@
     "react-redux": "^5.0.7",
     "react-resize-detector": "^3.4.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "^2.1.5",
+    "react-scripts": "^2.1.8",
     "react-widgets": "^4.4.10",
     "reactstrap": "^5.0.0",
     "redux": "^3.7.2",
@@ -37,5 +40,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likejean/Visit-Georgia.git"
+  },
+  "author": "Sergey Popach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/likejean/Visit-Georgia/issues"
+  },
+  "homepage": "https://github.com/likejean/Visit-Georgia#readme"
 }

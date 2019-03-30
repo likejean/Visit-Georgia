@@ -9,7 +9,7 @@ const JumbotronPage = (props) => {
             <MDBRow>
                 <MDBCol>
                     <MDBJumbotron>
-                    <h2 className="h1 display-3">{caption === '' ? 'Welcome to Georgia!' : caption}</h2>
+                    <h2 className="h1 display-3">{caption}</h2>
                     <p className="lead">
                         This is a simple hero unit, a simple Jumbotron-style component for
                         calling extra attention to featured content or information.

@@ -14,7 +14,7 @@ class CarouselPage extends Component {
         constructor(props) {
             super(props);
             this.state = {                 
-                caption: '',
+                caption: this.props.caption,
                 activeIndex: this.props.current
             };
             this.next = this.next.bind(this);
@@ -109,7 +109,4 @@ class CarouselPage extends Component {
             );
         }
     }
-
-
-
 export default CarouselPage;

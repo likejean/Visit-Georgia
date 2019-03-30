@@ -14,6 +14,7 @@ function Home(props) {
                 features={features} 
                 getTitle={getTitle} 
                 current={current}
+                caption={caption}
             />
         </React.Fragment>
     );  
